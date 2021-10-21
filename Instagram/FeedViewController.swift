@@ -37,6 +37,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         query.includeKey("author")
         query.limit = 20
         
+        query.order(byDescending: "createdAt")
         query.findObjectsInBackground { (posts, error) in
             if posts != nil {
                 self.posts = posts!
