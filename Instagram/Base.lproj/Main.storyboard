@@ -11,7 +11,7 @@
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -144,6 +144,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="NAi-Yr-IgA">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="3xZ-A5-JZp">
+                            <connections>
+                                <action selector="onLogoutButton:" destination="K9a-ZO-2Cb" id="QvC-Lx-c1X"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="insta_camera_btn" id="y6l-B0-vSB">
                             <connections>
                                 <segue destination="kCE-HW-Eyj" kind="presentation" id="4Lm-Tb-enY"/>
@@ -210,7 +215,7 @@
         <!--Navigation Controller-->
         <scene sceneID="oTq-9c-MxE">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="sEu-k0-nWj" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="FeedNavigationController" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="sEu-k0-nWj" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="XJq-nc-ihF">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
