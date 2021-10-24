@@ -22,7 +22,7 @@ The following **bonus** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://media.giphy.com/media/oqITzYNvNwyz3aDmHS/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://i.imgur.com/j43QvDt.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 # Instagram - Part I
 
