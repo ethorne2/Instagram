@@ -101,40 +101,78 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oUv-9v-iqT">
-                                                    <rect key="frame" x="8" y="8" width="398" height="360"/>
+                                                    <rect key="frame" x="8" y="8" width="398" height="370"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="360" id="O3o-fi-jtJ"/>
-                                                        <constraint firstAttribute="width" constant="360" id="RIr-js-5wn"/>
+                                                        <constraint firstAttribute="height" constant="370" id="O3o-fi-jtJ"/>
+                                                        <constraint firstAttribute="width" constant="370" id="RIr-js-5wn"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BKr-Do-dIP">
-                                                    <rect key="frame" x="35" y="376" width="45" height="34"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BKr-Do-dIP">
+                                                    <rect key="frame" x="24" y="386" width="47.5" height="24"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="I love photos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2mW-5a-RSk">
-                                                    <rect key="frame" x="87" y="382" width="278" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" misplaced="YES" text="I love photos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2mW-5a-RSk">
+                                                    <rect key="frame" x="79" y="386" width="286" height="24"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="BKr-Do-dIP" firstAttribute="leading" secondItem="scM-hD-YOD" secondAttribute="leading" constant="20" id="07D-Mu-MqG"/>
                                                 <constraint firstItem="oUv-9v-iqT" firstAttribute="top" secondItem="scM-hD-YOD" secondAttribute="top" constant="8" id="6N2-P9-UlB"/>
+                                                <constraint firstItem="BKr-Do-dIP" firstAttribute="leading" secondItem="scM-hD-YOD" secondAttribute="leading" constant="24" id="8Ta-dr-ATK"/>
+                                                <constraint firstItem="2mW-5a-RSk" firstAttribute="leading" secondItem="BKr-Do-dIP" secondAttribute="trailing" constant="8" symbolic="YES" id="DLN-Nl-sDH"/>
                                                 <constraint firstAttribute="trailing" secondItem="oUv-9v-iqT" secondAttribute="trailing" constant="8" id="P36-NL-17x"/>
-                                                <constraint firstItem="BKr-Do-dIP" firstAttribute="baseline" secondItem="2mW-5a-RSk" secondAttribute="baseline" id="UPI-Hz-7P8"/>
+                                                <constraint firstItem="2mW-5a-RSk" firstAttribute="top" secondItem="oUv-9v-iqT" secondAttribute="bottom" constant="8" id="Ppg-UP-ipP"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="BKr-Do-dIP" secondAttribute="bottom" constant="14" id="Vik-p4-Fr2"/>
+                                                <constraint firstAttribute="trailing" secondItem="2mW-5a-RSk" secondAttribute="trailing" constant="55" id="Wd5-Iw-scA"/>
                                                 <constraint firstItem="oUv-9v-iqT" firstAttribute="leading" secondItem="scM-hD-YOD" secondAttribute="leading" constant="8" id="aA1-Mi-407"/>
                                                 <constraint firstItem="BKr-Do-dIP" firstAttribute="top" secondItem="oUv-9v-iqT" secondAttribute="bottom" constant="8" id="jjs-jN-XKT"/>
-                                                <constraint firstItem="2mW-5a-RSk" firstAttribute="leading" secondItem="BKr-Do-dIP" secondAttribute="trailing" constant="30" id="z0e-1Q-toS"/>
+                                                <constraint firstAttribute="bottom" secondItem="2mW-5a-RSk" secondAttribute="bottom" constant="21" id="wW6-Ps-Hju"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="captionLabel" destination="2mW-5a-RSk" id="mPN-bB-RL0"/>
                                             <outlet property="photoView" destination="oUv-9v-iqT" id="kJr-MC-ncu"/>
                                             <outlet property="usernameLabel" destination="BKr-Do-dIP" id="z94-NC-7GE"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CommentCell" id="RJW-X8-pyB" customClass="CommentCell" customModule="Instagram" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="479.5" width="414" height="37"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RJW-X8-pyB" id="tW6-Ir-Ohm">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="37"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Liz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="861-3t-bqt">
+                                                    <rect key="frame" x="28" y="8" width="23.5" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a fake comment" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3r4-RZ-jP7">
+                                                    <rect key="frame" x="59.5" y="8" width="175" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="3r4-RZ-jP7" secondAttribute="bottom" constant="8" id="0nG-r6-hTM"/>
+                                                <constraint firstItem="3r4-RZ-jP7" firstAttribute="leading" secondItem="861-3t-bqt" secondAttribute="trailing" constant="8" id="8K0-cO-Rmm"/>
+                                                <constraint firstItem="3r4-RZ-jP7" firstAttribute="leading" secondItem="861-3t-bqt" secondAttribute="trailing" constant="8" id="J0t-SZ-bia"/>
+                                                <constraint firstItem="861-3t-bqt" firstAttribute="top" secondItem="tW6-Ir-Ohm" secondAttribute="top" constant="8" id="aoL-fu-tfU"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="3r4-RZ-jP7" secondAttribute="trailing" constant="8" id="itS-6G-Cf0"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="861-3t-bqt" secondAttribute="bottom" constant="8" id="ob2-u8-ktG"/>
+                                                <constraint firstItem="861-3t-bqt" firstAttribute="leading" secondItem="tW6-Ir-Ohm" secondAttribute="leading" constant="28" id="yNp-ou-PRa"/>
+                                                <constraint firstItem="3r4-RZ-jP7" firstAttribute="top" secondItem="tW6-Ir-Ohm" secondAttribute="top" constant="8" id="zNZ-Id-v6j"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="commentLabel" destination="3r4-RZ-jP7" id="SGH-fU-Ada"/>
+                                            <outlet property="nameLabel" destination="861-3t-bqt" id="uvC-sE-Cg9"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
